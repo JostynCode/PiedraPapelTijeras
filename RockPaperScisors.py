@@ -26,6 +26,10 @@ while user_option == "S":
         print(f"Ganaste, tu elegiste Piedra y la maquina ha sacado {valor}")
     elif valor == "Tijeras" and user_choice == 2:
         print(f"Perdiste, tu elegiste Papel y la maquina ha sacado {valor}")
+    elif user_choice > 3:
+        print("Por favor digite un valor entre 1 y 3")
+    elif user_choice < 1:
+        print("Por favor digite un valor entre 1 y 3")
     else:
         print(f"Empate, tu elegiste Tijeras y la maquina ha sacado {valor}")
 
